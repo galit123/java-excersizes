@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Git.Settings">
+    <option name="PATH_TO_GIT" value="C:\Program Files\Git\bin\git.exe" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager" selected="Application.CallInOrder">
+    <configuration name="CallInOrder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CallInOrder.CallInOrder" />
+      <module name="java-excersizes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CallInOrder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Anagram.Main" />
+      <module name="java-excersizes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Anagram.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OneAway" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CrackingTheCodingInterview.OneAway" />
+      <module name="java-excersizes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CrackingTheCodingInterview.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CallInOrder" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.OneAway" />
+      </list>
+    </recent_temporary>
+  </component>
+</project>
