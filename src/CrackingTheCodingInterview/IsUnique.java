@@ -1,5 +1,6 @@
 package CrackingTheCodingInterview;
 
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 // hints #44, 117, 132
@@ -13,6 +14,24 @@ public class IsUnique {
 			bytes.add(b);
 		}		
 		return str.length() == bytes.size();		
+	}
+
+	private boolean isUniqueWithSort(String str){
+		char[] chars = str.toCharArray();
+		Arrays.sort(chars);
+
+		char prev = 0;
+		int i = 0;
+		while (i < chars.length){
+			if (prev != 0){
+				if (chars[i] == prev){
+					return false;
+				}
+			}
+			prev = chars[i];
+			i++;
+		}
+		return true;
 	}
 	
 	private boolean isUniqueSingleDS(String w){
@@ -36,6 +55,10 @@ public class IsUnique {
 		
 		isunique = isUniqueSingleDS(w);
 		System.out.println(w + ", isUniqueSingleDS = " + isunique);
+
+		isunique = isUniqueWithSort(w);
+		System.out.println(w + ", isUniqueWithSort = " + isunique);
+
 
 	}
 	
