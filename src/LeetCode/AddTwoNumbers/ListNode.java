@@ -1,4 +1,4 @@
-package LeetCode;
+package LeetCode.AddTwoNumbers;
 
 public class ListNode {
     int val;

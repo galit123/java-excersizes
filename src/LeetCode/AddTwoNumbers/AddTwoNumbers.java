@@ -1,53 +1,10 @@
-package LeetCode;
+package LeetCode.AddTwoNumbers;
 
 
 // Definition for singly-linked list.
 
 class AddTwoNumbers {
 
-//    public ListNode addTwoNumbers(ListNode l1, ListNode l2){
-//        ListNode l3 = new ListNode();
-//        ListNode result = l3;
-//
-//        int carry = 0;
-//        while (l1 != null && l2 != null){
-//            int res = l1.val + l2.val + carry;
-//            l3.val = res % 10;
-//            carry = res /10;
-//
-//            l1 = l1.next;
-//            l2 = l2.next;
-//
-//            if ((l1 != null) || (l2 != null) || carry != 0){
-//                l3.next = new ListNode(carry);
-//                l3 = l3.next;
-//            }
-//        }
-//
-//        while (l1 != null){
-//            l3.val += l1.val + carry;
-//            carry = l3.val /10;
-//            l3.val = l3.val % 10;
-//            l1 = l1.next;
-//            if (l1 != null){
-//                l3.next = new ListNode(carry);
-//                l3 = l3.next;
-//            }
-//        }
-//
-//
-//        while (l2 != null){
-//            l3.val += l2.val + carry;
-//            carry = l3.val /10;
-//            l3.val = l3.val % 10;
-//            l2 = l2.next;
-//            if (l2 != null){
-//                l3.next = new ListNode(carry);
-//                l3 = l3.next;
-//            }
-//        }
-//        return  result;
-//    }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode l3 = new ListNode();
