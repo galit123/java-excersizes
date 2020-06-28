@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eae0e76d-13ba-48ca-b3eb-99f1f6041da3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/GeeksForGeeks/HowManyIlands/Indices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GeeksForGeeks/HowManyIlands/IsIslands.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codility/FirstMissingPositive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/codility/MinDistanceAdjacent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode/AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/AddTwoNumbers/AddTwoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LeetCode/ListNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LeetCode/AddTwoNumbers/ListNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +53,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Application.AddTwoNumbers">
+  <component name="RunManager" selected="Application.IsIslands">
     <configuration name="AddTwoNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.AddTwoNumbers.AddTwoNumbers" />
       <module name="java-excersizes" />
@@ -65,12 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EncoderDecoder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CrackingTheCodingInterview.EncoderDecoder" />
+    <configuration name="FirstMissingPositive" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="codility.FirstMissingPositive" />
       <module name="java-excersizes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CrackingTheCodingInterview.*" />
+          <option name="PATTERN" value="codility.FirstMissingPositive" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +80,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IsUnique" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CrackingTheCodingInterview.IsUnique" />
+    <configuration name="GroupsCombination" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="microsoft.GroupsCombination" />
       <module name="java-excersizes" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CrackingTheCodingInterview.*" />
+          <option name="PATTERN" value="microsoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IsIslands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GeeksForGeeks.HowManyIlands.IsIslands" />
+      <module name="java-excersizes" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GeeksForGeeks.HowManyIlands.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,26 +119,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sorting.MergeSort" />
-      <module name="java-excersizes" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Sorting.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.IsIslands" />
+        <item itemvalue="Application.GroupsCombination" />
+        <item itemvalue="Application.FirstMissingPositive" />
         <item itemvalue="Application.AddTwoNumbers" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.MergeSort" />
-        <item itemvalue="Application.EncoderDecoder" />
-        <item itemvalue="Application.IsUnique" />
       </list>
     </recent_temporary>
   </component>
@@ -152,58 +154,62 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1593202712470">
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1593372195124">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593202712470" />
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1593372195124" />
     <state x="442" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1592334840865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="442" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1592334840865" />
-    <state width="411" height="466" key="DebuggerActiveHint" timestamp="1592596303750">
+    <state width="450" height="466" key="DebuggerActiveHint" timestamp="1593373635203">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="411" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1592596303750" />
+    <state width="450" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1593373635203" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1593204998047">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1593204998047" />
-    <state width="1493" height="134" key="GridCell.Tab.0.bottom" timestamp="1593204935832">
+    <state width="1493" height="352" key="GridCell.Tab.0.bottom" timestamp="1593374546239">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="134" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593204935832" />
-    <state width="1493" height="134" key="GridCell.Tab.0.center" timestamp="1593204935831">
+    <state width="1493" height="352" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593374546239" />
+    <state width="1493" height="352" key="GridCell.Tab.0.center" timestamp="1593374546239">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="134" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593204935831" />
-    <state width="1493" height="134" key="GridCell.Tab.0.left" timestamp="1593204935831">
+    <state width="1493" height="352" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1593374546239" />
+    <state width="1493" height="352" key="GridCell.Tab.0.left" timestamp="1593374546238">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="134" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593204935831" />
-    <state width="1493" height="134" key="GridCell.Tab.0.right" timestamp="1593204935831">
+    <state width="1493" height="352" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1593374546238" />
+    <state width="1493" height="352" key="GridCell.Tab.0.right" timestamp="1593374546239">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="134" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593204935831" />
-    <state width="1493" height="110" key="GridCell.Tab.1.bottom" timestamp="1593204494363">
+    <state width="1493" height="352" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1593374546239" />
+    <state width="1493" height="352" key="GridCell.Tab.1.bottom" timestamp="1593374528310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="110" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593204494363" />
-    <state width="1493" height="110" key="GridCell.Tab.1.center" timestamp="1593204494363">
+    <state width="1493" height="352" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1593374528310" />
+    <state width="1493" height="352" key="GridCell.Tab.1.center" timestamp="1593374528310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="110" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593204494363" />
-    <state width="1493" height="110" key="GridCell.Tab.1.left" timestamp="1593204494362">
+    <state width="1493" height="352" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1593374528310" />
+    <state width="1493" height="352" key="GridCell.Tab.1.left" timestamp="1593374528310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="110" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593204494362" />
-    <state width="1493" height="110" key="GridCell.Tab.1.right" timestamp="1593204494363">
+    <state width="1493" height="352" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1593374528310" />
+    <state width="1493" height="352" key="GridCell.Tab.1.right" timestamp="1593374528310">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="110" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593204494363" />
+    <state width="1493" height="352" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1593374528310" />
     <state x="516" y="119" key="RollbackChangesDialog" timestamp="1592510158560">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="516" y="119" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592510158559" />
+    <state x="340" y="144" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1593259427828">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="340" y="144" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1593259427828" />
     <state x="154" y="26" width="1306" height="635" key="find.popup" timestamp="1592857897280">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -213,14 +219,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BinaryTree/BinaryTree.java</url>
-          <line>112</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/src/codility/FirstMissingPositive.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Sorting/MergeSort.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/src/GeeksForGeeks/HowManyIlands/IsIslands.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
