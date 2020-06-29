@@ -29,7 +29,7 @@ public class IsAdjacent {
         int max = Integer.MIN_VALUE;
         int i = 1;
         while (i < items.size()){
-            int sub = Math.abs(items.get(i).value - items.get(i - 1).value);
+            int sub = Math.abs(items.get(i).inx - items.get(i - 1).inx);
             if (min > sub){
                 min =sub;
             }
@@ -55,7 +55,7 @@ public class IsAdjacent {
         System.out.println(minDistance);
 
         int C[] = {7,1,5};
-        minDistance = x.solution(B);
+        minDistance = x.solution(C);
         System.out.println(minDistance);
 
 
