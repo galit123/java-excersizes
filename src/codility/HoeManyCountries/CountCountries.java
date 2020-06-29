@@ -103,8 +103,6 @@ public class CountCountries {
 
         int res = x.solution(A);
         System.out.println(res);
-
-        int B[] = {0, 3, 3, 5, 7, 1, 2};
     }
 
 
