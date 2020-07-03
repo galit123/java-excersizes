@@ -41,7 +41,6 @@ package GeeksForGeeks.SpecialStack;
 public class SpecialStack {
     private Node head = null;
     private int size = 0;
-    //private int min = Integer.MAX_VALUE;
 
     void push(int a)
     {
