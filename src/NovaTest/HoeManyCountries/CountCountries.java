@@ -1,4 +1,4 @@
-package codility.HoeManyCountries;
+package NovaTest.HoeManyCountries;
 
 import java.util.*;
 //A rectangular map consisting of N rows and M columns of square areas is

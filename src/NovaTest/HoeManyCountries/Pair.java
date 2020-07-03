@@ -1,4 +1,4 @@
-package codility.HoeManyCountries;
+package NovaTest.HoeManyCountries;
 
 import java.util.Objects;
 

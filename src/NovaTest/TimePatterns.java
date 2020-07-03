@@ -1,6 +1,7 @@
-package codility;
+package NovaTest;
 
 import java.util.*;
+
 // in this task we consider interesting patterns that could
 // be obsereved on a digital clock.
 // Such clock displays current time using the format "HH:MM:SS"
@@ -20,39 +21,8 @@ import java.util.*;
 // The task is to count interesting points in time in a given period of time
 //
 
-
-//
-// there are N tres (numbered 0 - N-1) in the forest. The K-th tree is
-// located at coordinates (X[k],Y[k])
-// Write a function that given two arrays X and Y consisting of N integers
-// each, denoting the positions of trees, returns the wisth of the widest possible path
-// Given X=[1,8,7,3,4,1,8], Y=[6,4,1,8,5,1,7] shuold return 3
-//       X= [5,5,5,7,7,7], Y=[3,4,5,1,3,7] should return 2
-//       X= [4,1,5,4], Y=[4,5,1,3] should return 3
-//       X= [6,10,1,4,3], Y=[2,5,3,1,6] should return 4
-
-public class NovaLomusTest {
-    public int solution1(int[] X, int[] Y) {
-        List<Integer> xList = new ArrayList<Integer>();
-
-        for (int i = 0; i < X.length; i++){
-            xList.add(X[i]);
-        }
-        Collections.sort(xList);
-
-        int max = 0;
-        int j = 1;
-        while (j < xList.size()){
-            int pathLength = xList.get(j) - xList.get(j-1);
-            if (max < pathLength){
-                max = pathLength;
-            }
-            j++;
-        }
-        return max;
-    }
-
-    public int solution2(String S, String T) {
+public class TimePatterns {
+    public int solution(String S, String T) {
         String[] sar = S.split(":");
         String[] tar = T.split(":");
 
@@ -88,7 +58,7 @@ public class NovaLomusTest {
 
             i++;
             ar1 = nextTime(ar1);
-           }
+        }
 
         return counter;
     }
@@ -129,21 +99,22 @@ public class NovaLomusTest {
 
 
     public static void main(String[] args) {
-        NovaLomusTest test = new NovaLomusTest();
+        TimePatterns test = new TimePatterns();
         int counter;
 
-        counter = test.solution2("23:57:00", "23:59:59");
+        counter = test.solution("23:57:00", "23:59:59");
         System.out.println();
         System.out.println(counter);
-//
-//        counter = test.solution2("22:21:21", "22:22:21");
-//        System.out.println(counter);
-//
-//        counter = test.solution2("15:15:00", "15:15:12");
-//        System.out.println(counter);
-//
-//        counter = test.solution2("22:22:21", "22:22:23");
-//        System.out.println(counter);
+
+        counter = test.solution("22:21:21", "22:22:21");
+        System.out.println(counter);
+
+        counter = test.solution("15:15:00", "15:15:12");
+        System.out.println(counter);
+
+        counter = test.solution("22:22:21", "22:22:23");
+        System.out.println(counter);
 
     }
+
 }
