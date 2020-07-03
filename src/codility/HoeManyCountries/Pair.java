@@ -13,14 +13,6 @@ public class Pair {
         this.color = color;
     }
 
-    public int getColor() {
-        return color;
-    }
-
-    public void setColor(int color) {
-        this.color = color;
-    }
-
     @Override
     public String toString() {
         return "Pair{" +
@@ -44,21 +36,4 @@ public class Pair {
     public int hashCode() {
         return Objects.hash(i, j, color);
     }
-
-    public int getI() {
-        return i;
-    }
-
-    public void setI(int i) {
-        this.i = i;
-    }
-
-    public int getJ() {
-        return j;
-    }
-
-    public void setJ(int j) {
-        this.j = j;
-    }
-
 }
