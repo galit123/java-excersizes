@@ -1,4 +1,4 @@
-package FizzBuzz;
+package Multithread.FizzBuzz;
 
 public class DevidedBy5  implements Runnable{
 

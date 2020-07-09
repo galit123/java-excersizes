@@ -1,4 +1,4 @@
-package DiningPhilosophers;
+package Multithread.DiningPhilosophers;
 
 public class DiningPhilosophers {
 	private Philosopher[] philosophers;

@@ -1,4 +1,4 @@
-package FizzBuzz;
+package Multithread.FizzBuzz;
 
 import java.util.Random;
 

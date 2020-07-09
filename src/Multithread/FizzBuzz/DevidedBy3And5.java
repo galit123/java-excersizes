@@ -1,4 +1,4 @@
-package FizzBuzz;
+package Multithread.FizzBuzz;
 
 public class DevidedBy3And5 implements Runnable{
 	private PrintNumbers printer;

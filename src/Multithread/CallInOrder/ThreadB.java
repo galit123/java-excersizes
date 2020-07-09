@@ -1,11 +1,10 @@
-package CallInOrder;
+package Multithread.CallInOrder;
 
-public class ThreadC  extends ThreadBase {
+public class ThreadB extends ThreadBase{
 
-	public ThreadC(Foo foo) {
+	public ThreadB(Foo foo) {
 		super(foo);
 	}
-
 
 	@Override
 	public void run() {
@@ -16,7 +15,8 @@ public class ThreadC  extends ThreadBase {
 			e.printStackTrace();
 		}
 
-		getFoo().third();
+		getFoo().second();
 	}
+	
 
 }

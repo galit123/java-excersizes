@@ -1,4 +1,4 @@
-package DiningPhilosophers;
+package Multithread.DiningPhilosophers;
 
 public class Chopstick {
 	private int inx;

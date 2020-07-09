@@ -1,4 +1,4 @@
-package FizzBuzz;
+package Multithread.FizzBuzz;
 
 public class FizzBuzz {
 	
@@ -20,7 +20,7 @@ public class FizzBuzz {
 	private static void printNumbers(int n) {
 		for (int i=0; i <= n; i++){
 			if (((i % 5) == 0) && ((i % 3) == 0)){
-				System.out.print("FizzBuzz ");
+				System.out.print("Multithread/FizzBuzz ");
 			} else if (((i % 3) == 0) && ((i % 5) != 0)){
 				System.out.print("Fizz ");
 			} else if (((i % 5) == 0) && ((i % 3) != 0)){

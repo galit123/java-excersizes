@@ -1,8 +1,8 @@
-package CallInOrder;
+package Multithread.CallInOrder;
 
-public class ThreadB extends ThreadBase{
+public class ThreadA extends ThreadBase {
 
-	public ThreadB(Foo foo) {
+	public ThreadA(Foo foo) {
 		super(foo);
 	}
 
@@ -14,9 +14,7 @@ public class ThreadB extends ThreadBase{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-		getFoo().second();
+		getFoo().first();
 	}
-	
 
 }

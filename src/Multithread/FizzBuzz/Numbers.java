@@ -1,4 +1,4 @@
-package FizzBuzz;
+package Multithread.FizzBuzz;
 
 public class Numbers implements Runnable{
 	private PrintNumbers printer;

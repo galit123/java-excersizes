@@ -1,4 +1,4 @@
-package CallInOrder;
+package Multithread.CallInOrder;
 
 import java.util.concurrent.Semaphore;
 

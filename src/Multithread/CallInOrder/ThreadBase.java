@@ -1,4 +1,4 @@
-package CallInOrder;
+package Multithread.CallInOrder;
 
 public abstract class ThreadBase implements Runnable {
 	private Foo foo;

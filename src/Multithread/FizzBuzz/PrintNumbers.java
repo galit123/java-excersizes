@@ -1,4 +1,4 @@
-package FizzBuzz;
+package Multithread.FizzBuzz;
 
 import java.util.function.Predicate;
 
@@ -40,7 +40,7 @@ public class PrintNumbers {
 	}
 
 	public void printDevidedBy3And5(){
-		printNext(p -> (((p % 5) == 0) && ((p % 3) == 0)), "FizzBuzz ");
+		printNext(p -> (((p % 5) == 0) && ((p % 3) == 0)), "Multithread/FizzBuzz ");
 	}
 
 
