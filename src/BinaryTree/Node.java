@@ -3,11 +3,11 @@ package BinaryTree;
 import java.util.Objects;
 
 public class Node {
-    public int value;
+    public char value;
     public Node left;
     public Node right;
 
-    public Node(int value) {
+    public Node(char value) {
         this.value = value;
         left = null;
         right = null;
@@ -17,8 +17,8 @@ public class Node {
     public String toString() {
         return "{" +
                 "value=" + value +
-//                "," +"left=" + left +
-//                ", right=" + right +
+                ", left=" + left +
+                ", right=" + right +
                 '}';
     }
 }

@@ -6,7 +6,7 @@ import java.util.Queue;
 public class BinaryTree {
     public Node root;
 
-    private Node insert(Node current, int val){
+    private Node insert(Node current, char val){
         if (current == null){
             return new Node(val);
         }
@@ -20,7 +20,7 @@ public class BinaryTree {
         return current;
     }
 
-    public Node add(int val){
+    public Node add(char val){
         root = insert(root, val);
         return root;
     }
@@ -110,7 +110,7 @@ public class BinaryTree {
 
     }
 
-    private Node delete(Node current, int val){
+    private Node delete(Node current, char val){
         if (current == null){
             return null;
         }
@@ -123,7 +123,7 @@ public class BinaryTree {
             } else if (current.left == null){
                 return current.right;
             }else {
-                int smallest = findSmallest(current.right);
+                char smallest = findSmallest(current.right);
                 current.value = smallest;
                 current.right = delete(current.right, smallest);
                 return current;
@@ -141,7 +141,7 @@ public class BinaryTree {
 
     }
 
-    private int findSmallest(Node current){
+    private char findSmallest(Node current){
         if (current.left == null){
             return current.value;
         } else {
@@ -149,7 +149,7 @@ public class BinaryTree {
         }
     }
 
-    public Node delete(int val){
+    public Node delete(char val){
         return delete(root, val);
     }
 
@@ -173,13 +173,13 @@ public class BinaryTree {
     public static void main(String[] args) {
         BinaryTree bt = new BinaryTree();
 
-        bt.add(6);
-        bt.add(4);
-        bt.add(8);
-        bt.add(3);
-        bt.add(5);
-        bt.add(7);
-        bt.add(9);
+        bt.add('6');
+        bt.add('4');
+        bt.add('8');
+        bt.add('3');
+        bt.add('5');
+        bt.add('7');
+        bt.add('9');
 
         printTree(bt);
 
@@ -191,12 +191,12 @@ public class BinaryTree {
 
         System.out.println("Delete 6");
 
-        bt.delete(6);
+        bt.delete('6');
         printTree(bt);
 
         System.out.println("Delete 5");
 
-        bt.delete(5);
+        bt.delete('5');
         printTree(bt);
 
     }

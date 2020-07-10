@@ -18,21 +18,21 @@ public class GetCommonParent {
 //10       30      50        70
 
     public static void main(String[] args) {
-        Node root = new Node(40);
+        Node root = new Node('4');
 
-        root.right = new Node(60);
-        root.right.right = new Node(70);
-        root.right.left = new Node(50);
+        root.right = new Node('6');
+        root.right.right = new Node('7');
+        root.right.left = new Node('5');
 
 
-        root.left = new Node(20);
-        root.left.right = new Node(30);
-        root.left.left = new Node(10);
+        root.left = new Node('2');
+        root.left.right = new Node('3');
+        root.left.left = new Node('1');
 
-        Node node = getCommonParent(root, new Node(50), new Node(70));
+        Node node = getCommonParent(root, new Node('5'), new Node('7'));
         System.out.println(node);
 
-        node = getCommonParent(root, new Node(20), new Node(70));
+        node = getCommonParent(root, new Node('2'), new Node('7'));
         System.out.println(node);
 
     }
