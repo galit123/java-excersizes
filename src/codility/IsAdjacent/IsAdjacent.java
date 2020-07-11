@@ -1,7 +1,5 @@
 package codility.IsAdjacent;
 
-import MyArrays.MyArrays;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

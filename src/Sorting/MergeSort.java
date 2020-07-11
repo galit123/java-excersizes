@@ -1,11 +1,8 @@
 package Sorting;
 
-import MyArrays.MyArrays;
+import Arrays.MyArrays;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 public class MergeSort {
 

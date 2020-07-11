@@ -1,6 +1,6 @@
 package NovaTest;
 
-import MyArrays.MyArrays;
+import Arrays.MyArrays;
 
 import java.util.*;
 
