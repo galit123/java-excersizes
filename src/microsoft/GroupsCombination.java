@@ -15,6 +15,7 @@ public class GroupsCombination {
 	}
 
 	public List<String> getCombinations(String str){
+		System.out.println(str);
 		List<String> res = new ArrayList<String>();
 		if ((str == null) || (str.length() == 0)){
 			res.add("");

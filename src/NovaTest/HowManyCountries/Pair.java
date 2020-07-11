@@ -1,4 +1,4 @@
-package NovaTest.HoeManyCountries;
+package NovaTest.HowManyCountries;
 
 import java.util.Objects;
 

@@ -1,4 +1,4 @@
-package NovaTest.HoeManyCountries;
+package NovaTest.HowManyCountries;
 
 import java.util.*;
 //A rectangular map consisting of N rows and M columns of square areas is
