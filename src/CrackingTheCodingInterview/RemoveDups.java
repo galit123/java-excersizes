@@ -1,5 +1,7 @@
 package CrackingTheCodingInterview;
 
+import LinkedList.LinkedList;
+
 public class RemoveDups {
 	
 	public void removeDups(LinkedList list) {

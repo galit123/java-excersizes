@@ -22,7 +22,7 @@ import java.util.Queue;
 //         / \ /
 //        6  6 6
 public class ConstractBinaryTreeFromArray {
-    public Node constractBinaryTree(char[] array){
+    public Node constractBinaryTree(int[] array){
         Queue<Node> q = new LinkedList<Node>();
 
         int i =0;
@@ -57,14 +57,14 @@ public class ConstractBinaryTreeFromArray {
     }
 
     public static void main(String[] args) {
-        char[] arr = {'1', '2', '3', '4', '5', '6'};
+        int[] arr = {'1', '2', '3', '4', '5', '6'};
         ConstractBinaryTreeFromArray c = new ConstractBinaryTreeFromArray();
         Node node = c.constractBinaryTree(arr);
 
         System.out.println(node );
 
 
-        char b[] = {'1', '2', '3', '4', '5', '6', '6', '6', '6', '6'};
+        int b[] = {'1', '2', '3', '4', '5', '6', '6', '6', '6', '6'};
         node = c.constractBinaryTree(b);
         System.out.println(node);
 

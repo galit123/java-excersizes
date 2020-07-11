@@ -1,4 +1,4 @@
-package CrackingTheCodingInterview;
+package LinkedList;
 
 public class LinkedList {
 	Node head = null;

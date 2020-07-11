@@ -110,7 +110,7 @@ public class BinaryTree {
 
     }
 
-    private Node delete(Node current, char val){
+    private Node delete(Node current, int val){
         if (current == null){
             return null;
         }
@@ -123,7 +123,7 @@ public class BinaryTree {
             } else if (current.left == null){
                 return current.right;
             }else {
-                char smallest = findSmallest(current.right);
+                int smallest = findSmallest(current.right);
                 current.value = smallest;
                 current.right = delete(current.right, smallest);
                 return current;
@@ -141,7 +141,7 @@ public class BinaryTree {
 
     }
 
-    private char findSmallest(Node current){
+    private int findSmallest(Node current){
         if (current.left == null){
             return current.value;
         } else {
