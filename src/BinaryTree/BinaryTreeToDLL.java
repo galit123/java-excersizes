@@ -93,12 +93,47 @@ public class BinaryTreeToDLL {
 
         Node head = bt.bToDLL(root);
         head.printTree();
+
+
+        int[] b = {'1', '2', '3', 'N', 'N', '4', '6', 'N', '5', 'N', 'N', '7', 'N'};
+
+        root = c.constractBinaryTree(b);
+        head = bt.bToDLL(root);
+        head.printTree();
+
+
+//        1 3 2
+//        Output:
+//        3 1 2
+//        2 1 3
+        int[] b1 = {1, 3, 2};
 //
+//         1
+//       /   \
+//      3     2
 //
-//        int[] b = {'1', '2', '3', 'N', 'N', '4', '6', 'N', '5', 'N', 'N', '7', 'N'};
-//
-//        root = c.constractBinaryTree(b);
-//        System.out.println(root);
-//        dll = bt.bToDLL(root);
+        root = c.constractBinaryTree(b1);
+        root.printTree();
+        head = bt.bToDLL(root);
+        head.printTree();
+
+//        10 20 30 40 60
+//        Output:
+//        40 20 60 10 30
+//        30 10 60 20 40
+
+        int[] b2 = {10, 20, 30, 40, 60};
+//              10
+//             /  \
+//            20   30
+//           /  \
+//          40   60
+
+//      40 <==> 20 <==> 60 <==> 10 <==> 30
+        root = c.constractBinaryTree(b2);
+        root.printTree();
+        head = bt.bToDLL(root);
+        head.printTree();
+
     }
 }
