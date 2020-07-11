@@ -92,14 +92,14 @@ public class BinaryTreeToDLL {
         root.printTree();
 
         Node head = bt.bToDLL(root);
-        head.printTree();
+        BinaryTreeToDLL2.printList(head);
 
 
         int[] b = {'1', '2', '3', 'N', 'N', '4', '6', 'N', '5', 'N', 'N', '7', 'N'};
 
         root = c.constractBinaryTree(b);
         head = bt.bToDLL(root);
-        head.printTree();
+        BinaryTreeToDLL2.printList(head);
 
 
 //        1 3 2
@@ -115,7 +115,7 @@ public class BinaryTreeToDLL {
         root = c.constractBinaryTree(b1);
         root.printTree();
         head = bt.bToDLL(root);
-        head.printTree();
+        BinaryTreeToDLL2.printList(head);
 
 //        10 20 30 40 60
 //        Output:
@@ -133,7 +133,7 @@ public class BinaryTreeToDLL {
         root = c.constractBinaryTree(b2);
         root.printTree();
         head = bt.bToDLL(root);
-        head.printTree();
+        BinaryTreeToDLL2.printList(head);
 
     }
 }
