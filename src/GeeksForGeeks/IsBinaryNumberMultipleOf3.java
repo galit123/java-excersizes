@@ -1,86 +1,76 @@
 package GeeksForGeeks;
 
+import java.util.Scanner;
+//    Given a binary number, write a program that prints 1 if given binary number is a multiple of 3.  Else prints 0. The given number can be big upto 2^100. It is recommended to finish the task using one traversal of input binary string.
+//
+//    Input:
+//    The first line contains T denoting the number of testcases. Then follows description of testcases.
+//    Each case contains a string containing 0's and 1's.
+//
+//    Output:
+//    For each test case, output a 1 if string is multiple of 3, else 0.
+//
+//    Constraints:
+//    1<=T<=100
+//    1<=Length of Input String<=100
+//
+//    Example:
+//    Input:
+//    2
+//    011
+//    100
+//
+//    Output:
+//    1
+//    0
 public class IsBinaryNumberMultipleOf3 {
-//  0000   0   +
-//  0001   1
-//  0010   2
-//  0011   3   +
-//  0100   4
-//  0101   5
-//  0110   6   +
-//  0111   7
-//  1000   8
-//  1001   9   +
-//  1010   10
-//  1011   11
-//  1100   12  +
-//  1101   13
-//  1110   14
-//  1111   15  +
 
+    //based on the fact that every pow(2,x) can be written as 3*k+1(if x is even) or 3*k-1(if x is odd).
     public boolean solution(String binaryNumber){
-        System.out.print(binaryNumber);
         char[] digits = binaryNumber.toCharArray();
-        int num = 0;
+        int odd = 0;
+        int even = 0;
         for (int i = 0; i < digits.length; i++){
             if (digits[i] == '1'){
-                num += Math.pow(2, (digits.length - i - 1));
+                if (i%2 == 0){
+                    even++;
+                } else {
+                    odd++;
+                }
             }
         }
+        return Math.abs(even - odd) % 3 == 0;
+    }
 
-        System.out.println(" = " + num);
-        return num % 3 == 0;
+    public static void readInput () {
+        IsBinaryNumberMultipleOf3 ques = new IsBinaryNumberMultipleOf3();
+        Scanner in = new Scanner(System.in);
+        int n = Integer.valueOf(in.nextLine());
+        String[] ts = new String[n];
+        for (int i = 0; i < n; i++) {
+            String x = in.nextLine();
+            boolean is = ques.solution(x);
+            int res = is? 1: 0;
+            System.out.println(res);
+        }
     }
 
 
     public static void main(String[] args) {
         IsBinaryNumberMultipleOf3 ques = new IsBinaryNumberMultipleOf3();
-        boolean is = ques.solution("0000");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
+        boolean is = ques.solution("0110000001001011000111110001010110001111000101110100010001111111111101000001001010101011100100");
+        System.out.println(is? 1: 0);
 
-        is = ques.solution("0001");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
+        is = ques.solution("100100000111111101010010010011010101110110");
+        System.out.println(is? 1: 0);
 
-        is = ques.solution("0010");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
+        is = ques.solution("101");
+        System.out.println(is? 1: 0);
 
-        is = ques.solution("0011");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
+        is = ques.solution("011");
+        System.out.println(is? 1: 0);
 
-        is = ques.solution("0100");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
-
-        is = ques.solution("0101");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
-
-        is = ques.solution("0110");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
-
-        is = ques.solution("0111");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
-
-        is = ques.solution("1000");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
-
-        is = ques.solution("1001");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
-
-        is = ques.solution("1010");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
-
-        is = ques.solution("1011");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
-
-        is = ques.solution("1100");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
-
-        is = ques.solution("1101");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
-
-        is = ques.solution("1110");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
-
-        is = ques.solution("1111");
-        System.out.println(" is " + (is? "": "not") + " Multiple of 3");
+        is = ques.solution("100");
+        System.out.println(is? 1: 0);
     }
 }
