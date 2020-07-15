@@ -1,4 +1,4 @@
-package microsoft;
+package Microsoft;
 
 import java.util.HashSet;
 import java.util.Set;
