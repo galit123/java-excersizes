@@ -45,7 +45,7 @@ public class SearchInRotatedArray {
 
     public int solution(int[] ar, int k){
         System.out.println("find " + k);
-        int r = findRotationInx(ar);
+        int r = findPivot(ar);
         int inx = findK(ar, k, 0, ar.length - 1, r);
 
         return inx;
@@ -81,7 +81,7 @@ public class SearchInRotatedArray {
         return ((i+r)% n);
     }
 
-    private int findRotationInx(int[] ar){
+    private int findPivot(int[] ar){
         for (int i = 0; i < ar.length - 1; i++){
             if (ar[i] > ar[i+1]){
                 return i + 1;
@@ -91,46 +91,44 @@ public class SearchInRotatedArray {
     }
 
     public static void main(String[] args) {
- //       Scanner in = new Scanner(System.in);
- //       int T = Integer.valueOf(in.nextLine());
-       // System.out.println("\nn = " + T);
+        Scanner in = new Scanner(System.in);
+        int T = Integer.valueOf(in.nextLine());
         SearchInRotatedArray s = new SearchInRotatedArray();
+
+        int[] res = new int[T];
+        for (int i = 0; i < T; i++){
+            int n = Integer.valueOf(in.nextLine());
+            int[] ar = new int[n];
+            for (int j = 0; j < n; j++){
+                ar[j] = in.nextInt();
+            }
+            int k = in.nextInt();
+            in.nextLine();
+            res[i] = s.solution(ar, k);
+
+        }
+
+        System.out.println();
+        for (int i = 0; i < T; i++){
+            System.out.println(res[i]);
+        }
+//        int[] ar = {5, 6, 7, 8, 9, 10, 1, 2, 3};
+//        int inx = s.solution(ar, 3);
+//        System.out.println(inx);
 //
-//        int[] res = new int[T];
-//        for (int i = 0; i < T; i++){
-//            int n = Integer.valueOf(in.nextLine());
-//            int[] ar = new int[n];
-//            for (int j = 0; j < n; j++){
-//                ar[j] = in.nextInt();
-//            }
-//            int k = in.nextInt();
-//            in.nextLine();
-//            res[i] = s.solution(ar, k);
 //
-//        }
+//        int[] b = {1, 2, 3 , 5, 6, 7, 8, 9, 10};
+//        inx = s.solution(ar, 3);
+//        System.out.println(inx);
 //
+//        inx = s.solution(ar, 1);
+//        System.out.println(inx);
 //
-//        System.out.println();
-//        for (int i = 0; i < T; i++){
-//            System.out.println(res[i]);
-//        }
-        int[] ar = {5, 6, 7, 8, 9, 10, 1, 2, 3};
-        int inx = s.solution(ar, 3);
-        System.out.println(inx);
-
-
-        int[] b = {1, 2, 3 , 5, 6, 7, 8, 9, 10};
-        inx = s.solution(ar, 3);
-        System.out.println(inx);
-
-        inx = s.solution(ar, 1);
-        System.out.println(inx);
-
-        inx = s.solution(ar, 10);
-        System.out.println(inx);
-
-        inx = s.solution(ar, 4);
-        System.out.println(inx);
+//        inx = s.solution(ar, 10);
+//        System.out.println(inx);
+//
+//        inx = s.solution(ar, 4);
+//        System.out.println(inx);
 
     }
 
