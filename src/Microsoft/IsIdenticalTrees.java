@@ -12,7 +12,7 @@ public class IsIdenticalTrees {
         if ((root1 == null) || (root2 == null)){
             return false;
         }
-        if (root1.data == root2.data){
+        if (root1.value == root2.value){
             return isIdentical(root1.left, root2.left) && isIdentical(root1.right, root2.right);
         }
         return false;
