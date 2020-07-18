@@ -40,27 +40,6 @@ public class KadanesAlgorithm {
     //sum = 1 3 6 -3  15
     public static void main(String[] args) {
         KadanesAlgorithm k = new KadanesAlgorithm();
-//
-//        Scanner in = new Scanner(System.in);
-//        int T = Integer.valueOf(in.nextLine());
-//
-//        int[] res = new int[T];
-//        for (int i = 0; i < T; i++){
-//            int n = Integer.valueOf(in.nextLine());
-//            int[] ar = new int[n];
-//            for (int j = 0; j < n; j++){
-//                ar[j] = in.nextInt();
-//            }
-//            in.nextLine();
-//            res[i] = k.solution(ar);
-//
-//        }
-//
-//        System.out.println();
-//        for (int i = 0; i < T; i++){
-//            System.out.println(res[i]);
-//        }
-
 
         int[] ar = {1, 2, 3, -2, 5};
         int res = k.solution(ar);
