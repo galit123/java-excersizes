@@ -1,4 +1,4 @@
-package GeeksForGeeks.HowManyIlands;
+package GeeksForGeeks;
 
 
 import java.util.*;

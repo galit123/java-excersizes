@@ -1,4 +1,4 @@
-package Microsoft;
+package BinaryTree;
 
 import BinaryTree.Node;
 

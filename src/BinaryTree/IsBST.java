@@ -1,12 +1,7 @@
-package Microsoft;
+package BinaryTree;
 
-import BinaryTree.ConstractBinaryTreeFromArray;
-import BinaryTree.Node;
-
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
 
 public class IsBST {
     boolean isBST(Node root){
