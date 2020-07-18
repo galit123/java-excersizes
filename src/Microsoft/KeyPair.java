@@ -1,21 +1,41 @@
 package Microsoft;
 
-import java.util.HashSet;
-import java.util.Scanner;
-import java.util.Set;
+import java.util.*;
 
 public class KeyPair {
     public boolean solution(int[] a, int x){
-        Set<Integer> set = new HashSet<Integer>();
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i = 0; i < a.length; i++){
-            set.add(a[i]);
+            add(map, a[i]);
         }
         for (int j = 0; j < a.length; j++){
-            if (set.contains(x-a[j])){
+            reduce(map, a[j]);
+             if (map.containsKey(x-a[j])){
                 return true;
             }
         }
         return false;
+    }
+
+    private void add(Map<Integer, Integer> map, int x){
+        if (map.containsKey(x)) {
+            int count = map.get(x) + 1;
+            map.replace(x, count);
+        } else {
+            map.put(x, 1);
+        }
+    }
+
+    private void reduce(Map<Integer, Integer> map, int x){
+        if (map.containsKey(x)) {
+            int count = map.get(x) - 1;
+            if (count == 0){
+                map.remove(x);
+            } else {
+                map.replace(x, count);
+            }
+
+        }
     }
 
     public static void main(String[] args) {
@@ -50,8 +70,14 @@ public class KeyPair {
 
         x= 4;
         int d[] = {1, 2, 5, 6, 7};
-        answer = k.solution(a, x)? "Yes": "No";
+        answer = k.solution(d, x)? "Yes": "No";
         System.out.println(answer);
+
+        x = 4;
+        int e[] = {1, 2, 2, 6, 7};
+        answer = k.solution(e, x)? "Yes": "No";
+        System.out.println(answer);
+
     }
 
 }
