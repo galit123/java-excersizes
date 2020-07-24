@@ -10,9 +10,7 @@ public class Items implements Comparator<String>{
 
     public int compare(String o1, String o2) {
         if ((o1 instanceof String) && (o2 instanceof String)) {
-            int n1 = getValue((String) o1);
-            int n2 = getValue((String) o2);
-            return n2 - n1;
+             return getValue((String) o2) - getValue((String) o1);  // descending order
         }
         return 0;
     }
