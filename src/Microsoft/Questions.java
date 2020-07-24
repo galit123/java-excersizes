@@ -52,7 +52,16 @@ public class Questions {
 //    always have at least one horizontal/vertical space between them. Solution should be
 //    with no extra memory, one pass, and without changing the board.
 
-//   Given a string made of 3 types of brackets, return true if it is a balanced one.
+//    Given a string made of 3 types of brackets, return true if it is a balanced one.
+
+//    9 coins, find out which one is heavier using a scale twice
+//    answer:
+//        weight 2 trios
+//        if one is heavier then the coin is there
+//        else the coin is in the third trio
+//        repeat the process within the trio
+//
+
     public static void main(String[] args) {
         int[] a = {-10, -2, 0, 1, 2, 5, 6, 9, 10};
         int res = findValueEqualsToIndex(a);
