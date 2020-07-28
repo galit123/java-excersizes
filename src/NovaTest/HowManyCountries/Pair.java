@@ -3,8 +3,8 @@ package NovaTest.HowManyCountries;
 import java.util.Objects;
 
 public class Pair {
-    int i;
-    int j;
+    public int i;
+    public int j;
     int color;
 
     public Pair(int i, int j, int color) {
