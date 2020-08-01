@@ -1,0 +1,9 @@
+Here is your assignment's feedback:
+1. Your API allows only string keys. This wasn't a part of the requirements and it limits the usage. Making the class generic would be helpful here.
+2. getMaxValues(..) returns a list, as if the order has some meaning. You can return Set or Collection instead.
+3. Not clear why you defined the main class itself as implementing Comparator. You could have supplied the priority queue with an anonymous nested class implementing this interface. No need to alter the
+API of the main class.
+4. add(..) - Documented complexity is incorrect. You are calling remove(object) on the PriorityQueue, and this is a linear time operation.
+5. correctness: when adding "a" then "b", getMaxValues returns ["b"] instead of ["a", "b"]. Your implementation of getMaxValues() modifies the queue for some reason, causing this error. Simple sanity tests would have revealed that.
+6. getValue() - could be implemented as 'return item.getOrDefault(key, 0)'.
+7. Time complexity - The optimal solution runs all operations in O(1) average time.
