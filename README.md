@@ -1,6 +1,6 @@
 ## Job search preparation - resources:
 
-
+#### Topics
 ##### Spring Boot
 [Spring Boot Course](https://www.youtube.com/watch?v=msXL2oDexqw&list=PLqq-6Pq4lTTbx8p2oCgcAQGQyqN8XeA1x)
     
@@ -26,13 +26,16 @@
 
 [How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
 
-
-##### BFS vs DFS
-[Difference between BFS and DFS](https://www.geeksforgeeks.org/difference-between-bfs-and-dfs/)
+####Data structures 
+[BFS vs DFS](https://www.geeksforgeeks.org/difference-between-bfs-and-dfs/)
 
 [Algorithms: Graph Search, DFS and BFS](https://www.youtube.com/watch?v=zaBhtODEL0w&t=53s)
 
-##### Interview Questions
+[Heap](https://www.geeksforgeeks.org/heap-data-structure/)
+
+[PriorityQueue in Java](https://www.geeksforgeeks.org/priority-queue-class-in-java-2)
+
+#### Interview Questions
 
 [Cracking The Coding Interview Solutions](https://github.com/ShreyasD/CrackingTheCodingInterviewSolutions)
 
